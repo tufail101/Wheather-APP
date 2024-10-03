@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="weather-title">Weather Forecast</h1>
+
+        <!-- Container for input -->
+        <div class="input-container">
+            <input type="text" id="city" placeholder="Enter city name" />
+            <button id="btn">Get Weather</button>
+        </div>
+
+ <div class="error-card">
+        <h2>City Not Found</h2>
+        <p>Oops! It seems like the city you entered doesn't exist or was misspelled. Please check your input and try again.</p>
+        
+    </div>
+        <!-- Container for weather information -->
+        <div class="weather-container" id="weather-info">
+            <div class="location">
+                <h2 id="city-name">City Name</h2>
+                <p class="description" id="weather-description">Clear sky</p>
+            </div>
+            <div class="temperature">
+                <h2 id="temperature">25°C</h2>
+            </div>
+            <div class="details">
+                <p id="humidity">Humidity: 60%</p>
+                <p id="wind">Wind: 10 km/h</p>
+            </div>
+        </div>
+
+      
+        </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
