@@ -16,7 +16,7 @@ btn.addEventListener("click", async () => {
   
   
   let city=cityInput.value;
-let api_key=`55bd0b8d0ec1c9b1571cf63184e0720b`;
+let api_key=`{your api_key here}`;
   let base_url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
   let response= await fetch(base_url);
   let data=await response.json()
